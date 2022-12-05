@@ -24,20 +24,38 @@
 		</h1> -->
 		<h2>
 			<a property="url" target="_blank">
-				<span property="name"></span>
+				<span property="nombre y apellido"></span>
 			</a>
 		</h2>
-		<p class="date"><time property="date"></time></p>
+		<p class="date"><time property="fecha"></time></p>
 		<address class="flag-[country]">
-			<span property="city"></span>,
-			<span property="country" mv-editor="#countries"></span>
+			<span property="telefono"></span>,
+      <span property="direccion"></span>
 		</address>
-		<p class="comment" property></p>
-		<p class="comment" style="display: [iff(feedback, block, none)]">
+		<p class="coordenadas" property></p>
+    <p class="commentario" property></p>
+<!-- 		<p class="comment" style="display: [iff(feedback, block, none)]">
 			<a property="feedback" target="_blank">Feedback</a>
-		</p>
+		</p> -->
 	</article>
 </main>
+
+<!-- <div hidden mv-app mv-init="https://projects.verou.me/countries.json">
+	<select id="countries">
+		<option value="online">Online</option>
+		<option value="[code]" property="country" mv-multiple typeof>[name]</option>
+	</select>
+
+	<select id="talk-type">
+		<option selected>Talk</option>
+		<option>Keynote</option>
+		<option>Workshop</option>
+		<option>Panel</option>
+	</select>
+</div> -->
+
+</body>
+</html>
 
 <div hidden mv-app mv-init="https://projects.verou.me/countries.json">
 	<select id="countries">
