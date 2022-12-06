@@ -9,67 +9,27 @@
 <link rel="stylesheet" href="https://get.mavo.io/stable/mavo.min.css">
 <script src="https://get.mavo.io/stable/mavo.es5.min.js"></script>
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <main mv-app class="talks" mv-plugins="gsheets" mv-storage="https://docs.google.com/spreadsheets/d/1lCILFpmgbQRogLKUX9mXEtuy3GRnAWohRgF7TVq_C6g/edit?usp=sharing" mv-storage-sheet="Sheet1" >
-	<h1>[count(talk)] sessions at [count(event)] events ([count(upcoming)] events upcoming)</h1>
+	<h1>[count(visit)] sessions at [count(event)] events ([count(upcoming)] events upcoming)</h1>
 	<article mv-multiple property="event" mv-order="desc">
 		<meta property="upcoming" content="[date > $now]" />
-		<!-- <h1 mv-multiple property="talk">
-			<span property="title" mv-default>Visita a ser agendada</span>
-			<span property class="type" mv-editor="#talk-type"></span>
-			<a property class="video" target="_blank">Video</a>
-			<a property class="slides" target="_blank">Slides</a>
-		</h1> -->
+		<h1 property="visit"></h1>
 		<h2>
 			<a property="url" target="_blank">
-				<span property="nombre y apellido"></span>
+			<span property="nombre y apellido"></span>
 			</a>
 		</h2>
 		<p class="date"><time property="date"></time></p>
-		<address class="flag-[country]">
+		<address class="flag-mx">
 			<span property="telefono"></span>,
-      <span property="direccion"></span>
+      			<span property="direccion"></span>
 		</address>
-		<p class="coordenadas" property></p>
-    <p class="commentario" property></p>
-<!-- 		<p class="comment" style="display: [iff(feedback, block, none)]">
-			<a property="feedback" target="_blank">Feedback</a>
-		</p> -->
+	<p class="coordenadas" property></p>
+    	<p class="commentario" property></p>
+
 	</article>
 </main>
-
-<!-- <div hidden mv-app mv-init="https://projects.verou.me/countries.json">
-	<select id="countries">
-		<option value="online">Online</option>
-		<option value="[code]" property="country" mv-multiple typeof>[name]</option>
-	</select>
-
-	<select id="talk-type">
-		<option selected>Talk</option>
-		<option>Keynote</option>
-		<option>Workshop</option>
-		<option>Panel</option>
-	</select>
-</div> -->
-
-</body>
-</html>
-
-<div hidden mv-app mv-init="https://projects.verou.me/countries.json">
-	<select id="countries">
-		<option value="online">Online</option>
-		<option value="[code]" property="country" mv-multiple typeof>[name]</option>
-	</select>
-
-	<select id="talk-type">
-		<option selected>Talk</option>
-		<option>Keynote</option>
-		<option>Workshop</option>
-		<option>Panel</option>
-	</select>
-</div>
-
 </body>
 </html>
