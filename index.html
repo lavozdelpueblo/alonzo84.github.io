@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Talks list</title>
+<title>Lists</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://lea.verou.me/wp-content/themes/elegant/style.css" />
 <link rel="stylesheet" href="https://get.mavo.io/stable/mavo.min.css">
@@ -12,24 +12,28 @@
 </head>
 <body>
 <main mv-app class="talks" mv-plugins="gsheets" mv-storage="https://docs.google.com/spreadsheets/d/1lCILFpmgbQRogLKUX9mXEtuy3GRnAWohRgF7TVq_C6g/edit?usp=sharing" mv-storage-sheet="Sheet1" >
-	<h1>[count(visit)] visitas, [count(exitosa)] exitosas </h1>
+	<h1>[count(event)] elemento </h1>
 	<article mv-multiple property="event" mv-order="desc">	
-		<h1 property="visit"></h1>
+		<h2>		
+			<span property="link"></span>
+		</h2>
 		<h2>
-			<a property="url" target="_blank">
-			<span property="nombre y apellido"></span>
-			</a>
+			<span property="gsheet"></span>
 		</h2>
 		<p class="date"><span property="fecha"></span></p>
-		<address class="">
-			<span property="telefono"></span>|
-      			<span property="direccion"></span>|
-			<span property="correo-e"></span>		
-		</address>
-	<p property="coordenadas"></p>
-    	<p property="comentario"></p>
-	<p property="exitosa"></p>
-	<p property="hora"></p>
+		<p property="nombre"></p>
+    	<p property="telefono"></p>
+		<p property="direccion"></p>
+		<p property="credencial"></p>
+		<p property="seccion"></p>
+		<p property="correoe"></p>
+		<p property="coordenadas"></p>
+		<p property="peticion"></p>
+		<p property="proposicion"></p>
+		<p property="consulta"></p>
+		<p property="denuncia"></p>
+		<p property="nota"></p>
+		<p property="extras"></p>
 	</article>
 </main>
 </body>
